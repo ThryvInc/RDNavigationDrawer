@@ -33,7 +33,7 @@ Simple implementation of navigation drawer for iOS that similar to Android Drawe
 
 
 # Sample Output (DEMO)
-    https://github.com/greatrandz123/RDNavigationDrawer/blob/master/SampleNavigationDrawer.png
+   https://github.com/greatrandz123/RDNavigationDrawer/blob/master/SampleNavigationDrawer.png
 
 
 # Usage
