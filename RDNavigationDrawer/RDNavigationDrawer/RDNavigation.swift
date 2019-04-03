@@ -8,13 +8,15 @@
 
 import UIKit
 
-protocol RDNavigation { 
+public protocol RDNavigation { 
     
     static var isOpen:Bool { get }
     
     static func right(target: Any?, view: UIView, percentage: CGFloat, isTopMost: Bool)
     
     static func left(target: Any?, view: UIView, percentage: CGFloat, isTopMost: Bool)
+    
+    static func sideToggle()
     
     static func sideToggleWithPercentage(_ percentage: CGFloat)
     

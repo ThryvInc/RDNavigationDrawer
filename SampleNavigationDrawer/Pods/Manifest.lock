@@ -1,0 +1,16 @@
+PODS:
+  - RDNavigationDrawer (1.0.0)
+
+DEPENDENCIES:
+  - RDNavigationDrawer (from `../RDNavigationDrawer`)
+
+EXTERNAL SOURCES:
+  RDNavigationDrawer:
+    :path: "../RDNavigationDrawer"
+
+SPEC CHECKSUMS:
+  RDNavigationDrawer: fc623510c05393ba05a22507e231e69afe3727cb
+
+PODFILE CHECKSUM: 6a2944ac2916f22436bff0bf8249d68fc308ecbf
+
+COCOAPODS: 1.7.0.beta.3

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RDNavigationDrawer: UIView, RDNavigationDrawerDelegate {
+open class RDNavigationDrawer: UIView, RDNavigationDrawerDelegate {
     
     @IBOutlet private weak var view: UIView!
     
@@ -21,12 +21,12 @@ class RDNavigationDrawer: UIView, RDNavigationDrawerDelegate {
     func viewDidDisappear() { }
     
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         nibSetup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     

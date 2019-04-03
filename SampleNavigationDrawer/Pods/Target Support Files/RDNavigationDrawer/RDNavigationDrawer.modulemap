@@ -1,0 +1,6 @@
+framework module RDNavigationDrawer {
+  umbrella header "RDNavigationDrawer-umbrella.h"
+
+  export *
+  module * { export * }
+}

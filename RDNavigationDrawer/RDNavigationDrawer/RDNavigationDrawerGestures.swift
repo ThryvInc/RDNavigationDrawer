@@ -369,7 +369,7 @@ extension RDNavigationDrawer: RDNavigation {
         }
     }
     
-    static func right(target: Any?, view: UIView, percentage: CGFloat, isTopMost: Bool = true) {
+    public static func right(target: Any?, view: UIView, percentage: CGFloat, isTopMost: Bool = true) {
         
         if let target = target as? UIViewController {
             targetController = target
@@ -401,7 +401,7 @@ extension RDNavigationDrawer: RDNavigation {
         
     }
     
-    static func left(target: Any?, view: UIView, percentage: CGFloat, isTopMost: Bool = true) {
+    public static func left(target: Any?, view: UIView, percentage: CGFloat, isTopMost: Bool = true) {
         
         if let target = target as? UIViewController {
             targetController = target
@@ -433,11 +433,11 @@ extension RDNavigationDrawer: RDNavigation {
         
     }
     
-    static func sideToggleWithPercentage(_ percentage: CGFloat) {
+    public static func sideToggleWithPercentage(_ percentage: CGFloat) {
         self.percentage(percentage, sideToggle: true)
     }
     
-    @objc class func sideToggle() {
+    @objc public static func sideToggle() {
         if navigationDrawer != nil {
             if navigationDrawer.isUserInteractionEnabled {
                 updateFrame()
@@ -453,37 +453,37 @@ extension RDNavigationDrawer: RDNavigation {
         }
     }
     
-    static func requireGestureRecognizerToFail(_ gesture: UIGestureRecognizer?) {
+    public static func requireGestureRecognizerToFail(_ gesture: UIGestureRecognizer?) {
         if openingPanGesture != nil {
             openingPanGesture.require(toFail: gesture!)
         }
     }
     
-    static func allowGestures(_ value: Bool) {
+    public static func allowGestures(_ value: Bool) {
         allowedOpeningGesture = value
         allowedClosingGesture = value
         addSwipeGesture()
     }
     
-    static func allowOpeningGesture(_ value: Bool) {
+    public static func allowOpeningGesture(_ value: Bool) {
         allowedOpeningGesture = value
         addSwipeGesture()
     }
     
-    static func allowClosingGesture(_ value: Bool) {
+    public static func allowClosingGesture(_ value: Bool) {
         allowedClosingGesture = value
         addSwipeGesture()
     }
     
-    static func enable(_ value: Bool) {
+    public static func enable(_ value: Bool) {
         enabled = value;
     }
     
-    static var isOpen:Bool {
+    public static var isOpen:Bool {
         return didOpen;
     }
     
-    static func topMost() {
+    public static func topMost() {
         if navigationDrawer != nil {
             let keyWindow = UIApplication.shared.keyWindow
             keyWindow?.addSubview(sideBarDimBackground)
