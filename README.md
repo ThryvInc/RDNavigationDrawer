@@ -26,7 +26,7 @@ Simple implementation of navigation drawer for iOS that similar to Android Drawe
         override func viewDidLoad() {
             super.viewDidLoad()
 
-            let sideMenu = SideBar(viewModel: "SideBarViewModel")
+            let sideMenu = SideMenu(viewModel: "SideMenuViewModel")
             RDNavigationDrawer.left(target: self, view: sideMenu, percentage: 80)
         }
     }
