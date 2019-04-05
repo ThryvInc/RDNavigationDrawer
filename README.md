@@ -17,7 +17,8 @@ Simple implementation of navigation drawer for iOS that similar to Android Drawe
   
   
 # Configure
-
+  MainView
+  
     import UIKit
     import RDNavigationDrawer
 
@@ -26,9 +27,30 @@ Simple implementation of navigation drawer for iOS that similar to Android Drawe
         override func viewDidLoad() {
             super.viewDidLoad()
 
-            let sideMenu = SideMenu(viewModel: "SideMenuViewModel")
+            let sideMenu = SideMenu(viewModel: SideMenuViewModel)
             RDNavigationDrawer.left(target: self, view: sideMenu, percentage: 80)
         }
+    }
+    
+ 
+  SideMenu
+   
+    import UIKit
+    import RDNavigationDrawer
+
+    class SideMenu: RDNavigationDrawer {
+
+        var viewModel: SideMenuViewModel!
+
+        init(viewModel: SideMenuViewModel) {
+            self.viewModel = viewModel
+            super.init(frame: CGRect.zero)
+        }
+
+        required init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
+        }
+
     }
 
 
