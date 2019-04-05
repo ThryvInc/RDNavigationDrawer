@@ -9,7 +9,7 @@ Simple implementation of navigation drawer for iOS that similar to Android Drawe
 
 
 # Installation
-    pod 'RDNavigationDrawer', '~> 1.0.1'
+    pod 'RDNavigationDrawer', '~> 1.0.3'
   
   
 # Compatibility
