@@ -9,7 +9,7 @@ Simple implementation of navigation drawer for iOS that similar to Android Drawe
 
 
 # Installation
-    pod 'RDNavigationDrawer', '~> 1.0.3'
+    pod 'RDNavigationDrawer', '~> 1.0.4'
   
   
 # Compatibility
@@ -56,7 +56,8 @@ Simple implementation of navigation drawer for iOS that similar to Android Drawe
 
 # Sample Output (DEMO)
    
-![Screenshot](https://github.com/greatrandz123/RDNavigationDrawer/blob/master/SampleNavigationDrawer.png)
+![Screenshot](https://github.com/greatrandz123/RDNavigationDrawer/blob/master/example.png)
+
 
 # Usage
 
@@ -89,3 +90,4 @@ RDNavigationDrawer is owned and maintained by Randolf Omalsa Dini-ay
 
 # License
 RDNavigationDrawer is released under the MIT license. See LICENSE for details.
+
