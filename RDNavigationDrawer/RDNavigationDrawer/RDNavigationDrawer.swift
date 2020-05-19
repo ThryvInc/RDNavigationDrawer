@@ -42,7 +42,7 @@ open class RDNavigationDrawer: UIView, RDNavigationDrawerDelegate {
     }
     
     private func loadViewFromNib() -> UIView {
-        let view = Bundle.main.loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?[0] as! UIView;
+        let view = Bundle(for: type(of: self)).loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?[0] as! UIView;
         let navigationDrawer = view as! RDNavigationDrawer
         return navigationDrawer;
     }
